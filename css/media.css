@@ -24,6 +24,14 @@
     max-width: 1140px;
     width: 100%;
   }
+  .product_box {
+    overflow-x: scroll;
+  }
+  .info_box {
+    flex-shrink: 0;
+    overflow: hidden;
+    overflow-x: scroll;
+  }
 }
 @media (max-width: 1200px) {
   .header_box {
@@ -99,8 +107,29 @@
   .nav_link:hover::after {
     transform: scale(1);
   }
-  .product_box {
-    overflow-x: scroll;
+  .box1,
+  .box2 {
+    display: none;
+  }
+  .footer_box {
+    justify-content: center;
+  }
+}
+@media (max-width: 850px) {
+  .products_card {
+    width: 350px;
+    height: 400px;
+  }
+  .product_hour {
+    width: 140px;
+  }
+  .product_title {
+    margin: 13px 0;
+  }
+  .sale_box {
+    width: 110px;
+    height: 45px;
+    font-size: 18px;
   }
 }
 @media (max-width: 599px) {
@@ -124,4 +153,117 @@
     height: 35px;
     font-size: 16px;
   }
+  .footer_box {
+    flex-direction: column;
+  }
+  .icons .like {
+    display: none;
+  }
+  .icons .korzina {
+    display: none;
+  }
+  .icons .contact {
+    display: none;
+  }
+  .icons {
+    display: flex;
+    gap: 5px;
+  }
+  .products_card {
+    width: 330px;
+    height: 400px;
+  }
 }
+
+@media (max-width: 499px) {
+  .intro_left_card {
+    width: 400px;
+    height: 230px;
+  }
+  .intro_left_card:nth-of-type(2) img {
+    width: 130px;
+    margin-left: 50px;
+    gap: 0;
+  }
+  .intro_right_card {
+    width: 400px;
+    height: 230px;
+  }
+  .intro_card_sale {
+    width: 80px;
+  }
+  .logo a {
+    font-size: 28px;
+  }
+  .header_box {
+    gap: 19px;
+  }
+}
+@media (max-width: 399px) {
+  .intro_left_card {
+    width: 300px;
+    height: 330px;
+    flex-direction: column;
+  }
+  .intro_left_card:nth-of-type(2) img {
+    width: 130px;
+    margin-left: 0px;
+    gap: 0;
+  }
+  .intro_title {
+    margin: 10px;
+  }
+  .intro_sub_title {
+    margin-bottom: 10px;
+  }
+  .intro_right_card {
+    width: 300px;
+    height: 330px;
+    flex-direction: column;
+  }
+  .intro_right_card img {
+    width: 130px;
+  }
+  .products_card {
+    width: 200px;
+    height: 330px;
+  }
+  .product_hour {
+    width: 120px;
+  }
+  .sale_box {
+    width: 85px;
+    font-size: 15px;
+  }
+  .products_card {
+    width: 290px;
+    height: 400px;
+  }
+  .liked_box {
+    width: 40px;
+    height: 40px;
+  }
+  .liked_box img {
+    width: 17px;
+  }
+  .korzina_box {
+    width: 40px;
+    height: 40px;
+    top: calc(70px);
+    right: calc(20px);
+  }
+  .korzina_box img {
+    width: 17px;
+  }
+  .product_coast {
+    font-size: 17px;
+  }
+  .product_title {
+    font-size: 18px;
+    margin: 12px;
+  }
+  .product_sub_title{
+    font-size: 15px;
+  }
+}
+s
